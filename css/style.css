@@ -994,7 +994,7 @@ span {
 }
 
 #bakery-gallary .title {
-  margin-bottom: 50px;
+  margin-bottom: 2.5vw;
 }
 
 .bakery-slideshow {
@@ -1074,6 +1074,7 @@ span {
   align-items: center;
   gap: 2.5vw;
   margin-bottom: 5vw;
+  height: 12vw;
 }
 
 .ebechun-area {
@@ -1081,7 +1082,6 @@ span {
   border: #3B302A 1px solid;
   background: #ffffff;
   width: 12vw;
-  height: 12vw;
 }
 
 .ebechun-area img {
@@ -1099,7 +1099,7 @@ span {
   width: 57vw;
   min-width: 285px;
   height: 7vw;
-  min-height: 38vw;
+  min-height: 38px;
 }
 
 .title-area h2 {
