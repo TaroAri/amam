@@ -1123,12 +1123,13 @@ span {
 
 .bakery-interview-area h3 {
   font-family: "Kaisei Opti";
-  font-size: 4vw;
-  margin: 2.5vw 0 2.5vw;
+  font-size: clamp(20px, 6vw, 70px);
+  margin: 2.5vw 0 3vw;
 }
 
 .bakery-interview-area img {
-  width: 38vw;
+  width: 58vw;
+  max-width: 725px;
   margin-bottom: 5vw;
 }
 
