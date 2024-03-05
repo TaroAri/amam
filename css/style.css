@@ -1380,6 +1380,8 @@ span {
 .near-park-name p:before {
   width: 100%;
   transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
 }
 
 
@@ -1387,7 +1389,13 @@ span {
   width: 8%;
   transform: translateY(-50%) rotate(-30deg);
   transform-origin: right center;
+  -webkit-transform: translateY(-50%) rotate(-30deg);
+  -webkit-transform-origin: right center;
+  -moz-transform: translateY(-50%) rotate(-30deg);
+  -moz-transform-origin: right center;
 }
+
+
 
 .near-park-name p:hover::before {
   width: 120%;
@@ -1448,6 +1456,11 @@ span {
   height: 100%;
   object-fit: fill;
   object-position: center;
+}
+
+.park-first-view3 {
+  width: 100vw;
+  height: auto;
 }
 
 .park-first-view-text {
