@@ -22,7 +22,7 @@
 
 --------------------------------------------------------------------*/
 
-body{
+body {
   margin: 0;
   font-family: "Mamelon";
   background-color: #FFFAF0;
@@ -155,7 +155,7 @@ span {
   font-size: clamp(10px, 2vw, 40px);
   font-weight: 600;
   line-height: 2;
-} 
+}
 
 .top-botton {
   background-image: url(../img/tongs_open.png);
@@ -257,6 +257,7 @@ span {
   width: 86vw;
   height: auto;
 }
+
 /*
 .first-view-inner {
   position: relative;
@@ -486,18 +487,21 @@ span {
 
 /*========================================*/
 #popup {
-  display: none; /* label でコントロールするので input は非表示に */
+  display: none;
+  /* label でコントロールするので input は非表示に */
 }
 
 .popup-open {
-  cursor: pointer; /* マウスオーバーでカーソルの形状を変えることで、クリックできる要素だとわかりやすいように */
+  cursor: pointer;
+  /* マウスオーバーでカーソルの形状を変えることで、クリックできる要素だとわかりやすいように */
 }
 
 .popup-overlay {
-  display: none; /* input にチェックが入るまでは非表示に */
+  display: none;
+  /* input にチェックが入るまでは非表示に */
 }
 
-#popup:checked ~ .popup-overlay {
+#popup:checked~.popup-overlay {
   display: block;
   z-index: 99999;
   background-color: #00000070;
@@ -534,6 +538,7 @@ span {
   top: -26px;
   right: 0;
 }
+
 /*=========================================*/
 
 
@@ -548,6 +553,7 @@ span {
   padding: 10px;
   z-index: 100;
 }
+
 /*=======================================*/
 .map-bakery1 {
   top: 21.7%;
@@ -707,6 +713,7 @@ span {
 .step-order1 {
   order: 1;
 }
+
 .step-order2 {
   order: 2;
 }
@@ -850,7 +857,7 @@ span {
   background-size: cover;
   font-family: "craftmincho";
   font-size: 2.5vw;
-  color:#ffffff;
+  color: #ffffff;
   width: 16vw;
   height: 9vw;
 }
@@ -907,7 +914,7 @@ span {
   margin: 0 1vw 0 1vw;
   padding: 0 1vw 0.2vw 1vw;
   transition: .4s;
-} 
+}
 
 .near-bakery-name h3:hover {
   transform: scale(1.1);
@@ -1021,6 +1028,7 @@ span {
   from {
     transform: translateX(0);
   }
+
   to {
     transform: translateX(-100%);
   }
@@ -1030,6 +1038,7 @@ span {
   from {
     transform: translateX(0);
   }
+
   to {
     transform: translateX(-100%);
   }
@@ -1053,6 +1062,7 @@ span {
   from {
     transform: translateX(0);
   }
+
   to {
     transform: translateX(100%);
   }
@@ -1062,6 +1072,7 @@ span {
   from {
     transform: translateX(0);
   }
+
   to {
     transform: translateX(100%);
   }
@@ -1308,7 +1319,7 @@ span {
   justify-items: center;
   align-items: end;
   grid-template-columns: 1.2fr 1fr;
-  grid-template-rows:  15vw 15vw;
+  grid-template-rows: 15vw 15vw;
   width: 90vw;
   margin: 2.5vw auto 0;
   font-family: "Kaisei Opti";
@@ -1377,24 +1388,39 @@ span {
   transition: all .3s;
 }
 
-.near-park-name p:before {
-  width: 100%;
-  transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
+.near-park-name p::before, 
+.near-park-name p::after{
+  width: 30px;
+  height: 30px;
+  background-color: #f00;
 }
 
+@supports(transform:translateY(-50%)) {
+  .near-park-name p:before,
+  .near-park-name p:after {
+    height: 1px;
+    background: #3B302A;
+  }
 
-.near-park-name p:after {
-  width: 8%;
-  transform: translateY(-50%) rotate(-30deg);
-  transform-origin: right center;
-  -webkit-transform: translateY(-50%) rotate(-30deg);
-  -webkit-transform-origin: right center;
-  -moz-transform: translateY(-50%) rotate(-30deg);
-  -moz-transform-origin: right center;
+  .near-park-name p:before {
+    width: 100%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+  }
+
+
+  .near-park-name p:after {
+    width: 8%;
+    transform: translateY(-50%) rotate(-30deg);
+    transform-origin: right center;
+    -webkit-transform: translateY(-50%) rotate(-30deg);
+    -webkit-transform-origin: right center;
+    -moz-transform: translateY(-50%) rotate(-30deg);
+    -moz-transform-origin: right center;
+  }
+
 }
-
 
 
 .near-park-name p:hover::before {
@@ -1412,21 +1438,21 @@ span {
 
 
 /*全て共通：hideエリアをはじめは非表示*/
-.hide-area{
-	display: none;
+.hide-area {
+  display: none;
 }
 
 /*全て共通：モーダルのボタンの色を変更したい場合*/
-.modaal-close:after, 
-.modaal-close:before{
-	background:#ccc;	
+.modaal-close:after,
+.modaal-close:before {
+  background: #ccc;
 }
 
 .modaal-close:focus:after,
 .modaal-close:focus:before,
 .modaal-close:hover:after,
-.modaal-close:hover:before{
-	background:#666;
+.modaal-close:hover:before {
+  background: #666;
 }
 
 
@@ -1484,7 +1510,7 @@ span {
   align-items: center;
   width: 80vw;
   height: 770px;
-  margin: 100px auto ;
+  margin: 100px auto;
 }
 
 .park-about-textarea {
@@ -1667,7 +1693,7 @@ span {
 
   .hamburger-menu {
     display: inline;
-   
+
   }
 
   .hamburger-nav {
@@ -1688,6 +1714,7 @@ span {
     font-size: clamp(20px, 3vw, 34px);
     padding-top: clamp(130px, 17vw, 200px);
   }
+
   .hamburger-nav li {
     margin-bottom: 30px;
   }
@@ -1697,10 +1724,11 @@ span {
     right: 0;
   }
 
-  .openbtn{
-    position:fixed;
-    z-index: 1000;/*ボタンを最前面に*/
-    top:20px;
+  .openbtn {
+    position: fixed;
+    z-index: 1000;
+    /*ボタンを最前面に*/
+    top: 20px;
     right: 20px;
     cursor: pointer;
     width: 10vw;
@@ -1732,9 +1760,9 @@ span {
          パン屋レスポンシブ
 
 　--------------------------------------------------------------------*/
-  
-  
- 
+
+
+
 }
 
 @media screen and (max-width:600px) {
@@ -1783,6 +1811,7 @@ span {
   .near-park-grid h3 {
     margin: 12vw 0 3vw;
   }
+
   .near-park-name p {
     width: 15vw;
     margin: 5vw auto;
@@ -1792,16 +1821,5 @@ span {
   .near-park-name p:after {
     height: 0.1px;
   }
-  
+
 }
-
-
-
-
-
-
-
-
-
-
-
