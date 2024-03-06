@@ -1386,6 +1386,7 @@ span {
   background: #3B302A;
   content: '';
   transition: all .3s;
+  display: block;
 }
 
 .near-park-name p::before, 
